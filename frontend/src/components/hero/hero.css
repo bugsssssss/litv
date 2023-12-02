@@ -1,0 +1,175 @@
+.hero__main {
+	background: #404040;
+	height: 1270px;
+	padding: 40px;
+	position: relative;
+}
+
+.hero__main__ttile {
+	font-size: 50px;
+	font-weight: 300;
+	color: rgb(115, 113, 113);
+	display: flex;
+	margin-top: 35px;
+	flex-direction: column;
+}
+
+.hero__main__ttile .text {
+	line-height: 20px;
+}
+
+.hero__main__ttile .text-title {
+	font-size: 72px;
+}
+
+.hero__main__ttile .text-title-red {
+	font-size: 72px;
+	color: rgba(216, 15, 15, 0.878);
+}
+
+.hero__main__picture {
+	position: absolute;
+	top: 75px;
+	left: 0;
+	width: 100%;
+	max-width: 1400px;
+	height: 1100px;
+	/* background: url("../../../public/images/стартовый-тв.png"); */
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+/* .hero__main__picture img {
+	position: absolute;
+	top: 75px;
+	left: -10px;
+	width: 100%;
+	height: 100%;
+} */
+
+.rectangle {
+	width: 700px;
+	height: 1170px;
+	transform: rotate(180deg);
+	position: absolute;
+	background-color: #124559;
+	clip-path: polygon(-2.43% 8.65%, 95% 100%, -65000% 100%);
+	top: 0;
+	right: 0;
+	overflow: hidden;
+}
+
+.rectangle__title {
+	font-size: 58px;
+	font-weight: 400;
+	color: #fff;
+	position: absolute;
+	top: 40%;
+	right: 2%;
+}
+
+.hero__logos {
+	margin: 0 auto;
+	position: absolute;
+	bottom: 0%;
+	/* left: 15%; */
+	display: flex;
+	gap: 40px;
+	/* max-width: 1060px; */
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 90px;
+
+	width: 97%;
+	flex-wrap: wrap;
+}
+
+.hero__logos img {
+	/* width: 155px; */
+	height: 65px;
+}
+
+#wifi {
+	height: 95px;
+}
+.hero__logos__4k {
+	font-size: 36px;
+	font-weight: bold;
+	width: 95px;
+	height: 65px;
+	background-color: #124559;
+	color: #fff;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.partners__container-item {
+	width: 320px;
+	height: 200px;
+	border-radius: 20px;
+	/* background-color: #fff; */
+}
+
+@media screen and (max-width: 1200px) {
+	.hero__logos {
+		bottom: -50px;
+	}
+	.rectangle,
+	.rectangle__title {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 660px) {
+	.rectangle,
+	.rectangle__title {
+		display: none;
+	}
+
+	.hero__main {
+		height: 1100px;
+	}
+
+	.hero__main__picture {
+		position: absolute;
+		top: 205px;
+		left: 0;
+		height: 307px;
+		width: 395px;
+	}
+
+	.hero__main__ttile {
+		font-size: 32px;
+	}
+
+	.webos-logo {
+		width: 240px;
+		height: 55px;
+		margin-top: 10px !important;
+	}
+
+	.hero__logos {
+		/* bottom: 0; */
+		flex-direction: column;
+		width: 100%;
+		left: 0;
+	}
+
+	.hero__logos img {
+		height: 40px;
+	}
+
+	#wifi {
+		height: 75px;
+	}
+
+	.hero__logos__4k {
+		font-size: 24px;
+		width: 75px;
+		height: 50px;
+	}
+}

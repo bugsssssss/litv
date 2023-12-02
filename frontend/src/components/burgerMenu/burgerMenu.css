@@ -1,0 +1,38 @@
+.menu-container {
+	display: none;
+}
+
+.menu-title {
+	cursor: pointer;
+	z-index: 100;
+	position: absolute;
+	right: 10px;
+	top: 13px;
+}
+
+.menu-list {
+	position: absolute;
+	width: 150px;
+	padding: 10px;
+	top: 0;
+	right: 0;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+	width: 100vw;
+	height: 100vh;
+	background-color: #124559;
+}
+
+.menu-list-item a:hover {
+	color: #fff;
+}
+
+@media screen and (max-width: 920px) {
+	.menu-container {
+		display: unset;
+	}
+}

@@ -1,0 +1,352 @@
+.vitrina {
+	padding: 40px 60px 80px 60px;
+	background: #5e5e5e;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	/* flex-wrap: wrap; */
+}
+
+.vitrina__left-section {
+	display: flex;
+	flex-direction: column;
+	/* height: 1400px; */
+	gap: 15px;
+}
+
+.vitrina__left {
+	width: 500px;
+	/* height: 815px; */
+	display: flex;
+	flex-direction: column;
+	border-radius: 25px;
+	background: #404040;
+	align-items: center;
+	padding-bottom: 120px;
+}
+
+.vitrina__left-top {
+}
+
+.vitrina__left-top__title {
+	font-size: 32px;
+	font-weight: 300;
+	color: rgb(255, 255, 255);
+	display: flex;
+	margin-top: 60px;
+	flex-direction: column;
+	text-align: center;
+}
+
+.vitrina__left-top__title .text-bold {
+	line-height: 20px;
+	font-weight: 500;
+}
+
+.vitrina__left-top__title .text-title {
+	font-size: 72px;
+	color: rgb(115, 113, 113);
+	line-height: 55px;
+}
+
+.vitrina__left-top__title .text-title .red {
+	color: rgba(216, 15, 15, 0.878);
+}
+
+.vitrina__left-bottom {
+	width: 500px;
+	height: 362px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 25px;
+	background: #404040;
+	align-items: center;
+	padding: 40px;
+	text-align: center;
+}
+
+.left-bottom-title {
+	font-size: 32px;
+	font-weight: 300;
+	color: rgb(255, 255, 255);
+}
+
+.left-bottom-description {
+	font-size: 20px;
+	font-weight: 300;
+	color: rgb(255, 255, 255);
+}
+
+.left-bottom-logos {
+	display: flex;
+	align-items: center;
+	gap: 35px;
+	margin-top: 95px;
+}
+
+.left-bottom-logos img.allplay {
+	width: 145px;
+	/* height: 70px; */
+}
+
+.left-bottom-logos img.youtube {
+	width: 200px;
+	/* height: 65px; */
+}
+
+.vitrina__right-section {
+	display: flex;
+	flex-direction: column;
+	/* height: 1400px; */
+	gap: 10px;
+}
+
+.right-top-text {
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+	color: #fff;
+	margin-top: 50px;
+}
+
+.vitrina__right-top {
+	position: relative;
+	overflow: hidden;
+	width: 500px;
+	height: 330px;
+	border-radius: 25px;
+	background: #404040;
+	align-items: center;
+	padding: 20px;
+}
+
+.right-top-title {
+	font-size: 42px;
+}
+
+.right-top-description {
+	font-size: 20px;
+	line-height: 34px;
+}
+
+.right-top-image {
+	position: absolute;
+	top: -60px;
+	right: -188px;
+	width: 495px;
+	height: 450px;
+	background-size: cover;
+	background-position: left;
+	background-repeat: no-repeat;
+	height: 600px;
+}
+
+.vitrina__right-center {
+	position: relative;
+	width: 500px;
+	height: 305px;
+	border-radius: 25px;
+	background: #404040;
+	align-items: center;
+	padding: 20px;
+	overflow: hidden;
+	background-color: #124559;
+}
+
+.right-center-text {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 40%;
+	right: 3%;
+	color: #fff;
+}
+
+.right-center-title {
+	font-size: 26px;
+	line-height: 28px;
+	font-weight: 600;
+}
+
+.right-center-description {
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.right-center-image {
+	position: absolute;
+	top: -252px;
+	left: -485px;
+	width: 500px;
+	height: 726px;
+}
+
+.vitrina__right-bottom {
+	width: 500px;
+	height: 360px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 25px;
+	background: #404040;
+	padding: 30px 40px;
+	background: url("../../../public/images/tv-dolby-8.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	margin-top: 8px;
+}
+
+.right-bottom-text {
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+	color: #fff;
+}
+
+.right-bottom-title {
+	font-size: 25px;
+	line-height: 30px;
+}
+
+.right-bottom-description {
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.right-bottom-image {
+	position: absolute;
+	width: 100px;
+	top: 40%;
+	left: 10%;
+}
+
+@media screen and (max-width: 1200px) {
+	.vitrina {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.vitrina__left-section {
+		height: unset;
+		gap: 20px;
+	}
+
+	.vitrina__right-top,
+	.vitrina__right-center,
+	.vitrina__right-section,
+	.vitrina__right-bottom {
+		width: 500px;
+	}
+
+	.vitrina__right-section {
+		height: unset;
+	}
+
+	.vitrina__right-bottom {
+		margin-top: 10px;
+	}
+
+	.right-top-title {
+		font-size: 42px;
+	}
+
+	.right-top-description {
+		font-size: 24px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.vitrina {
+		padding: 25px 30px;
+	}
+	.vitrina__left-section {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.vitrina__left-top-background img {
+		height: 230px !important;
+	}
+	.vitrina__left-top__title span {
+		font-size: 24px !important;
+	}
+
+	.vitrina__left-top__title img {
+		width: 180px;
+		height: 45px;
+	}
+
+	.vitrina__left,
+	.vitrina__left-bottom {
+		width: 350px;
+	}
+
+	.left-bottom-logos {
+		margin-top: 40px;
+	}
+
+	.left-bottom-logos img.youtube {
+		width: 140px;
+	}
+
+	.left-bottom-logos img.allplay {
+		width: 110px;
+	}
+
+	.vitrina__right-top,
+	.vitrina__right-center,
+	.vitrina__right-section,
+	.vitrina__right-bottom {
+		width: 350px;
+	}
+
+	.vitrina__right-top {
+		height: 275px;
+	}
+
+	.right-top-image {
+		top: -85px;
+		width: 400px;
+		height: 450px;
+	}
+
+	.right-top-title {
+		font-size: 30px;
+	}
+	.right-top-description {
+		font-size: 18px;
+		line-height: 20px;
+	}
+	.right-center-title {
+		font-size: 20px;
+		line-height: 20px;
+	}
+
+	.right-center-description {
+		font-size: 16px;
+	}
+
+	.vitrina__right-center {
+		height: 230px;
+	}
+
+	.vitrina__right-bottom {
+		height: 240px;
+		padding: 17px 20px;
+	}
+
+	.right-bottom-title {
+		font-size: 20px;
+	}
+
+	.right-bottom-description {
+		font-size: 12px;
+	}
+
+	.right-bottom-image {
+		width: 80px;
+		top: 36%;
+		left: unset;
+	}
+}

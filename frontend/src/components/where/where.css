@@ -1,0 +1,44 @@
+.where {
+	padding: 100px 30px;
+	color: #fff;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.support__center-box img {
+	width: 300px;
+}
+
+.center-box-logo {
+	width: 100%;
+	height: 200px;
+	background-position: center;
+	background-size: cover;
+}
+
+.center-box-logo.elmakon {
+	background-image: url("../../../public/images/elmakon.png");
+}
+
+.center-box-logo.goodzone {
+	background-image: url("../../../public/images/goodzone.png");
+	background-size: contain;
+	width: 70%;
+	background-repeat: no-repeat;
+}
+
+.center-box-logo.idea {
+	background-image: url("../../../public/images/idea-logo.png");
+}
+
+.center-box-logo.uzum {
+	background-image: url("../../../public/images/uzum-footer.png");
+	background-size: contain;
+	width: 70%;
+	background-repeat: no-repeat;
+}
+
+.btn-primary.gray {
+	background-color: #5e5e5e;
+	padding: 20px 40px;
+}
