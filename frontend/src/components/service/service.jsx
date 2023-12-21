@@ -15,13 +15,13 @@ export function Service() {
 	const { language } = useContext(LanguageContext);
 
 	async function getPartners() {
-		const response = await fetch("https://ssmart.uz/api/partners/");
+		const response = await fetch("http://127.0.0.1:8000/api/partners/");
 		const data = await response.json();
 		setPartners(data);
 	}
 
 	async function getBanner() {
-		const response = await fetch("https://ssmart.uz/api/adverts/");
+		const response = await fetch("http://127.0.0.1:8000/api/adverts/");
 		const data = await response.json();
 		setBanner(data);
 	}
@@ -100,20 +100,23 @@ export function Service() {
 					{words[language]["partners_heading"]}
 				</h2>
 				<div className="partners__container">
-					{partners.map((partner) => (
-						<div
-							style={{
-								backgroundColor: `${partner.background_color}` || "white",
-								backgroundImage: `url(${partner.image})`,
-								backgroundSize: "contain",
-								backgroundPosition: "center",
-								backgroundRepeat: "no-repeat",
-								zIndex: "100",
-							}}
-							className="partners__container-item"
-							key={partner.id}
-						></div>
-					))}
+					{false ? (
+						partners.map((partner) => (
+							<div
+								style={{
+									backgroundColor: `${partner.background_color}` || "white",
+									backgroundImage: `url(${partner.image})`,
+									backgroundSize: "contain",
+									backgroundPosition: "center",
+									backgroundRepeat: "no-repeat",
+									zIndex: "100",
+								}}
+								className="partners__container-item"
+								key={partner.id}
+							></div>
+						))
+					) : (<h3 style={{'color': "#fff"}}>No parthers yet</h3>)}
+					
 				</div>
 			</div>
 		</section>

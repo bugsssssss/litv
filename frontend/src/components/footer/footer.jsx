@@ -68,10 +68,10 @@ export function Footer() {
 						<Link to="mailto: info@litv.uz">Эл.почта</Link>
 					</li>
 					<li className="footer__list-item">
-						<Link to="tel:+998712209009">Колл-центр : +998 75 220 00 55</Link>
+						<Link to="tel:+998712209009">Колл-центр :</Link>
 					</li>
 					<li className="footer__list-item">
-						<Link to="">Часы работы : с 9:00 до 18:00 Карши</Link>
+						<Link to="">Часы работы :</Link>
 					</li>
 
 					<li className="footer__list-item">

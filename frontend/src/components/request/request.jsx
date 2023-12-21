@@ -28,7 +28,7 @@ export function Request() {
 	const sendFormData = async (data) => {
 		try {
 			console.log(data);
-			const response = await fetch("https://ssmart.uz/api/dealers/", {
+			const response = await fetch("http://127.0.0.1:8000/api/dealers/", {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
