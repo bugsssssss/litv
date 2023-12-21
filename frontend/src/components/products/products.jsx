@@ -11,7 +11,7 @@ export function Products() {
 	const { language } = useContext(LanguageContext);
 
 	async function getProducts() {
-		const response = await fetch("https://ssmart.uz/api/products/");
+		const response = await fetch("http://127.0.0.1:8000/api/products/");
 		const data = await response.json();
 		setProducts(data);
 	}
@@ -54,7 +54,9 @@ export function Products() {
 			<h1 id="products__heading" className="products__heading">
 				{words[language]["products_heading"]}
 			</h1>
-			<Slider products={products} />
+			{/* should be replaces with products array */}
+			{false ? (<Slider products={products} />) : (<h3 style={{'color': "#fff"}}>No products yet</h3>)}
+			{/* <Slider products={products} /> */}
 			{/* {products.map((product) => (
 				<ProductsContainer
 					name={product.name}
